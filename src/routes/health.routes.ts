@@ -1,3 +1,6 @@
+/*
+    - Routes for Health, live and ready
+ */
 import type{FastifyInstance} from 'fastify';
 
 export async function healthRoutes(app:FastifyInstance){

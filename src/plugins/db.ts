@@ -1,3 +1,10 @@
+/*
+    - Connecting DB using Fastify plugin style
+    - Linking PostgreSQL through credential 
+    - Closing DB when Fastify ends.
+    - Export the plugin
+ */
+
 import fp from 'fastify-plugin';
 import {Pool} from 'pg'
 

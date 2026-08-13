@@ -5,6 +5,8 @@ import databasePlugin from './plugins/db.js';
 const app = Fastify({
   logger: true,
 });
+
+// Register plugin and Routes
 app.register(databasePlugin);
 app.register(healthRoutes);
 
