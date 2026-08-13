@@ -1,13 +1,5 @@
-import Fastify from 'fastify';
-
-const app = Fastify({
-    logger:true,
-});
-
-// GET health
-app.get('/health', async ()=>{
-    return {status:"ok"};
-});
+import 'dotenv/config';
+import app from './app.js';
 
 const start = async () => {
   try{
@@ -17,7 +9,7 @@ const start = async () => {
     });
   }catch(err){
     app.log.error(err);
-    process.exit(1);
+    process.exit(1);  
   }   
 };
 
